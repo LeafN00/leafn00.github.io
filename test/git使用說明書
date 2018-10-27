@@ -1,0 +1,34 @@
+安裝git，執行cmd或git cmd
+>cd 資料夾 //移至子層資料夾
+>cd .. //上一個資料夾
+>dir/w //叫出目錄
+>mkdir 新資料夾名 //建立新資料夾
+>echo >> index.html //新建檔案
+
+安裝git後，先建立使用者
+>git config --list //或 -l 檢視git設定
+>git config --global user.name Marry //設定使用者名稱
+>git config --global user.email blabla@gmail.com //設定使用者電子郵件
+若要更換直接重複輸入即可
+
+版本控制以資料夾為單位
+>git init //初始化，建立一個隱藏的.git資料夾，刪除就無效了
+>git status //檢視狀態，紅字為未追蹤檔案，綠字為追蹤中
+>git add . //新增資料夾中所有檔案
+>git commit -m "一定要輸入訊息e.g.no msg" //提交版本並附加訊息
+>git log //檢視版本
+>git log --oneline //檢視版本號
+>git reset 版本號 --hard //強制變更程某版本
+>git reflog //檢視版本歷程
+
+github遠端控制版本
+註冊帳號並建立新的儲存庫，若想要儲存庫可以預覽網頁，需要將儲存庫命名為
+username.github.io 作為預覽網頁的網址使用
+>git clone 儲存庫的網址 //下載儲存庫資料夾至當前目錄
+將要做版本控制的資料夾丟進儲存庫資料夾，根目錄只能有這個資料夾
+>cd 儲存庫資料夾
+>git add . 
+>git commit -m"test"
+>git push origin master //把檔案上傳至github，原始節點的主分支
+預覽網址
+https://儲存庫名稱(username.github.io)/上傳的資料夾/上傳的網頁.html

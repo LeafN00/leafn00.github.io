@@ -1,0 +1,35 @@
+/*Noto Sans TC*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+html, body, h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Noto Sans TC, Indie Flower, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    font-family: Indie Flower;
+}
+p{
+    font-size: .9em;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    border: 0;
+    vertical-align: top;
+}
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: "";
+}
